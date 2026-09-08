@@ -915,16 +915,20 @@ async def startup():
     await db.timecards.create_index([("user_id", 1), ("date", 1)])
     await db.schedules.create_index([("user_id", 1), ("date", 1)])
     await get_settings()
-    owner_username = os.environ.get("OWNER_USERNAME", "owner").lower()
-    existing = await db.users.find_one({"username": owner_username})
-    if not existing:
-        await db.users.insert_one({
+owner_username = os.environ.get("OWNER_USERNAME", "owner").lower()
+
+await db.users.update_one(
+    {"employee_id": "OWNER001"},
+    {
+        "$setOnInsert": {
             "id": str(uuid.uuid4()),
             "full_name": "Store Owner",
             "employee_id": "OWNER001",
             "username": owner_username,
             "pin_hash": hash_secret(os.environ.get("OWNER_PIN", "4321")),
-            "password_hash": hash_secret(os.environ.get("OWNER_PASSWORD", "Owner@2025")),
+            "password_hash": hash_secret(
+                os.environ.get("OWNER_PASSWORD", "Owner@2025")
+            ),
             "phone": "",
             "email": os.environ.get("OWNER_EMAIL", ""),
             "role": "owner",
@@ -933,7 +937,10 @@ async def startup():
             "active": True,
             "avatar": "",
             "created_at": iso(now_utc()),
-        })
+        }
+    },
+    upsert=True,
+)
         logger.info("Seeded default owner account")
 
 @app.on_event("shutdown")
