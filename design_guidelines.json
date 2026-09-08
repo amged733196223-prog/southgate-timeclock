@@ -1,0 +1,213 @@
+{
+  "project_name": "Southgate Smoke Shop - Employee Attendance & Time Clock System",
+  "app_type": "hybrid_fullstack",
+  "theme_mode": "dark",
+  "design_archetype": "THE PERFORMANCE PRO & TACTICAL DARK KIOSK",
+  "typography": {
+    "font_family_primary": "Outfit, sans-serif",
+    "font_family_heading": "Cabinet Grotesk, Outfit, sans-serif",
+    "font_family_code_pin": "JetBrains Mono, monospace",
+    "headscreen_h1": "text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight",
+    "section_h2": "text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight",
+    "card_h3": "text-lg sm:text-xl font-semibold",
+    "kiosk_clock_digits": "text-5xl sm:text-7xl font-mono font-black tracking-widest text-amber-400 drop-shadow-[0_0_20px_rgba(245,158,11,0.3)]",
+    "subtext": "text-sm text-slate-400 font-medium"
+  },
+  "colors": {
+    "background_main": "#090A0F",
+    "background_secondary": "#11131B",
+    "card_surface": "#181A24",
+    "card_border": "#282C3D",
+    "card_border_highlight": "#3A3F56",
+    "text_primary": "#F8FAFC",
+    "text_secondary": "#94A3B8",
+    "text_muted": "#64748B",
+    "status_clock_in": {
+      "bg": "bg-emerald-950/80",
+      "border": "border-emerald-500/50",
+      "text": "text-emerald-400",
+      "glow": "shadow-[0_0_25px_rgba(16,185,129,0.25)]",
+      "button_gradient": "bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-bold"
+    },
+    "status_clock_out": {
+      "bg": "bg-rose-950/80",
+      "border": "border-rose-500/50",
+      "text": "text-rose-400",
+      "glow": "shadow-[0_0_25px_rgba(244,63,94,0.25)]",
+      "button_gradient": "bg-gradient-to-r from-rose-600 to-red-500 hover:from-rose-500 hover:to-red-400 text-white font-bold"
+    },
+    "status_break": {
+      "bg": "bg-amber-950/80",
+      "border": "border-amber-500/50",
+      "text": "text-amber-400",
+      "glow": "shadow-[0_0_25px_rgba(245,158,11,0.25)]",
+      "button_gradient": "bg-gradient-to-r from-amber-600 to-yellow-500 hover:from-amber-500 hover:to-yellow-400 text-slate-950 font-bold"
+    },
+    "status_end_break": {
+      "bg": "bg-sky-950/80",
+      "border": "border-sky-500/50",
+      "text": "text-sky-400",
+      "glow": "shadow-[0_0_25px_rgba(56,189,248,0.25)]",
+      "button_gradient": "bg-gradient-to-r from-sky-600 to-blue-500 hover:from-sky-500 hover:to-blue-400 text-white font-bold"
+    },
+    "accent_brand": "#F59E0B"
+  },
+  "layout_and_spacing": {
+    "kiosk_mode": "Full viewport experience with zero scroll clutter. Top banner showing live store status, digital clock & ambient smoke shop branding. Center stage with twin view (PIN Keypad / Active Staff Quick Select + Huge tactile action cards).",
+    "dashboard_mode": "Sidebar or top nav with quick view switcher (Live Dashboard, Employee Roster, Weekly Schedules, Timesheets & Approvals, Payroll Estimate, Attendance Reports, Store Settings). Dense, data-rich bento grid for metric cards with live pulses.",
+    "container_padding": "p-4 sm:p-6 lg:p-8",
+    "card_padding": "p-5 sm:p-6",
+    "gap_grid": "gap-4 sm:gap-6"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-slate-900/80 border border-slate-800/80 shadow-2xl",
+    "kiosk_pin_button": "h-16 w-16 text-2xl font-mono font-bold rounded-2xl bg-slate-800/80 border border-slate-700/80 text-white hover:bg-amber-500 hover:text-slate-950 hover:border-amber-400 active:scale-95 transition-all shadow-md flex items-center justify-center",
+    "kiosk_giant_action_button": "h-28 sm:h-36 rounded-2xl flex flex-col items-center justify-center gap-2 text-xl sm:text-2xl font-black uppercase tracking-wider transition-all transform active:scale-95 shadow-xl border cursor-pointer",
+    "live_pulse_badge": "relative flex h-3 w-3 inline-block mr-2",
+    "live_pulse_dot": "animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+  },
+  "image_urls": {
+    "store_banner": "https://images.unsplash.com/photo-1777195595983-d9efde4c1223?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBzbW9rZSUyMHNob3AlMjBpbnRlcmlvciUyMGxvdW5nZSUyMHByb2R1Y3QlMjBkaXNwbGF5fGVufDB8fHx8MTc4ODgxNzQ2OHww&ixlib=rb-4.1.0&q=85",
+    "store_products": "https://images.unsplash.com/photo-1578861370344-09e8078e1936?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBzbW9rZSUyMHNob3AlMjBpbnRlcmlvciUyMGxvdW5nZSUyMHByb2R1Y3QlMjBkaXNwbGF5fGVufDB8fHx8MTc4ODgxNzQ2OHww&ixlib=rb-4.1.0&q=85",
+    "avatars": [
+      {
+        "id": "emp_1",
+        "name": "Marcus Vance",
+        "role": "Owner / Manager",
+        "url": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBlbXBsb3llZSUyMHBvcnRyYWl0JTIwZGFya25lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4ODgxNzQ3NXww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "id": "emp_2",
+        "name": "Elena Rostova",
+        "role": "Supervisor",
+        "url": "https://images.unsplash.com/photo-1607746882042-944635dfe10e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBlbXBsb3llZSUyMHBvcnRyYWl0JTIwZGFya25lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4ODgxNzQ3NXww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "id": "emp_3",
+        "name": "Devon Miller",
+        "role": "Senior Associate",
+        "url": "https://images.unsplash.com/photo-1584940120505-117038d90b05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBlbXBsb3llZSUyMHBvcnRyYWl0JTIwZGFya25lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4ODgxNzQ3NXww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "id": "emp_4",
+        "name": "Tariq Hudson",
+        "role": "Inventory Specialist",
+        "url": "https://images.unsplash.com/photo-1726226620773-aa4b24edd612?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBlbXBsb3llZSUyMHBvcnRyYWl0JTIwZGFya25lc3MlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4ODgxNzQ3NXww&ixlib=rb-4.1.0&q=85"
+      }
+    ]
+  },
+  "component_structure": {
+    "kiosk": {
+      "path": "src/components/kiosk/KioskClockIn.js",
+      "features": [
+        "Live digital clock with seconds & date banner",
+        "Employee list fast-picker OR PIN Keypad entry",
+        "Visual PIN dots indicator with clear & backspace buttons",
+        "Huge CLOCK IN, CLOCK OUT, START BREAK, END BREAK touch controls",
+        "Instant confirmation toast modal with employee photo, timestamp, audio chime toggle & duration summary",
+        "Quick supervisor lock/override option"
+      ]
+    },
+    "owner_dashboard": {
+      "path": "src/components/dashboard/OwnerDashboard.js",
+      "features": [
+        "Realtime Stat Counters: Currently Working, On Break, Not Clocked In, Late Today, Today's Total Labor Hours",
+        "Employee Status Grid with live timer counters, shift start time, and quick manager action menu",
+        "Recent Timeclock Activity Stream with timestamps and action badges",
+        "Store Shift Coverage Bar & Overtime Warning Alerts"
+      ]
+    },
+    "employee_management": {
+      "path": "src/components/employees/EmployeeManagement.js",
+      "features": [
+        "CRUD Employee list with search & filter by role (Owner, Supervisor, Employee)",
+        "Modal/Drawer form for adding & editing employee details (Name, Hourly Rate, PIN code, Phone, Email, Shift Preference)",
+        "PIN Reset action with quick copy / SMS simulation",
+        "Active / Inactive status toggle"
+      ]
+    },
+    "work_schedules": {
+      "path": "src/components/schedule/WorkSchedules.js",
+      "features": [
+        "7-day Weekly Grid view showing shift assignments per employee",
+        "Shift creation modal (Start time, End time, Role required, Notes)",
+        "Copy Previous Week schedule feature & Publish Schedule trigger",
+        "Total scheduled hours vs labor budget projection"
+      ]
+    },
+    "timesheets": {
+      "path": "src/components/timesheets/Timesheets.js",
+      "features": [
+        "Filterable view: Daily, Weekly, Biweekly, Monthly",
+        "Detailed timecard records (Clock In, Break Start, Break End, Clock Out, Total Hours, OT Hours)",
+        "Manual time adjustment modal with mandatory manager approval reason note and audit log",
+        "Single & Bulk Approval buttons"
+      ]
+    },
+    "payroll": {
+      "path": "src/components/payroll/PayrollEstimate.js",
+      "features": [
+        "Payroll calculation table breakdown per employee",
+        "Automatic Overtime calculation (1.5x rate for hours > 40 in a week)",
+        "Break deduction rules & Net estimated pay output",
+        "Export payroll summary modal"
+      ]
+    },
+    "reports": {
+      "path": "src/components/reports/ReportsAnalytics.js",
+      "features": [
+        "Interactive Date Range Filter (Today, This Week, Last Week, Custom Range)",
+        "Recharts visualizations for Daily Hours Worked, Punctuality/Late Trends, Labor Cost by Day",
+        "One-click CSV & printable PDF report generator with preview modal"
+      ]
+    },
+    "attendance_history": {
+      "path": "src/components/history/AttendanceHistory.js",
+      "features": [
+        "Comprehensive log of all clock events with filters for Employee, Date, Event Type, and Flagged Anomalies",
+        "Download audit log option"
+      ]
+    },
+    "settings": {
+      "path": "src/components/settings/StoreSettings.js",
+      "features": [
+        "Store hours configuration & Grace period threshold (e.g. 5 mins for late flag)",
+        "Overtime rules (Weekly > 40h, Daily > 8h)",
+        "Kiosk PIN Enforcement & Lockout policies",
+        "IP / Terminal registration setup"
+      ]
+    }
+  },
+  "testing_and_data_ids": {
+    "rule": "ALL interactive components MUST include semantic data-testid attributes",
+    "examples": [
+      "data-testid='kiosk-clock-in-btn'",
+      "data-testid='kiosk-clock-out-btn'",
+      "data-testid='kiosk-start-break-btn'",
+      "data-testid='kiosk-end-break-btn'",
+      "data-testid='kiosk-pin-input'",
+      "data-testid='kiosk-pin-num-0' through 9",
+      "data-testid='nav-tab-dashboard'",
+      "data-testid='nav-tab-kiosk'",
+      "data-testid='nav-tab-employees'",
+      "data-testid='nav-tab-schedules'",
+      "data-testid='nav-tab-timesheets'",
+      "data-testid='nav-tab-payroll'",
+      "data-testid='nav-tab-reports'",
+      "data-testid='nav-tab-settings'",
+      "data-testid='add-employee-button'",
+      "data-testid='export-csv-button'",
+      "data-testid='export-pdf-button'",
+      "data-testid='filter-date-range'"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Ensure the app opens directly with a clean role switcher header (Kiosk Mode / Owner Dashboard) and pre-seeded mock data for Southgate Smoke Shop.",
+    "2. Store state cleanly in React context or localStorage so employee clock-ins dynamically update the Live Owner Dashboard immediately.",
+    "3. Build giant, highly visible touch buttons for CLOCK IN, CLOCK OUT, START BREAK, END BREAK on the Kiosk screen.",
+    "4. Use sonner or custom modal toasts for immediate feedback when an employee clocks in/out with exact timestamp.",
+    "5. Use dark-mode themed Tailwind CSS throughout (#090A0F background, #181A24 card surfaces, slate borders, bright emerald/amber/rose accents).",
+    "6. Include all required functional screens: Kiosk, Owner Live Dashboard, Employee Management, Work Schedules, Timesheets, Payroll Estimate, Reports & Export, Attendance History, Store Settings.",
+    "7. Attach data-testid attributes to all buttons, inputs, tabs, and stat cards."
+  ]
+}
